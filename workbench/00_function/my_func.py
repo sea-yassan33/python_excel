@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 from openpyxl.styles import Font, Border, Side,Alignment
-def write_excel(excel_path, sheet_name):
+def write_excel(excel_path, sheet_name='sheet_py'):
   # エクセルファイルが開いていたら処理を終了
   try:
     wb = load_workbook(excel_path)
